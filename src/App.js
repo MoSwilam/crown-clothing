@@ -1,9 +1,10 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import './App.css';
-import {ShopPage} from './pages/shop/shop.component'
+import {ShopComponent} from './pages/shop/shop.component'
 import HomePage from "./pages/homepage/homepage.component";
 import {Header} from "./components/header/header.component";
+import {AuthComponent} from "./pages/auth/auth.component";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
             <Header />
             <Switch>
                 <Route exact path={'/'} component={HomePage}/>
-                <Route path={'/shop'} component={ShopPage} />
+                <Route path={'/shop'} component={ShopComponent} />
+                <Route path={'/auth'} component={AuthComponent} />
             </Switch>
         </div>
     );

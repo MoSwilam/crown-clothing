@@ -2,7 +2,7 @@ import React from "react";
 import {SHOP_DATA} from "../../data";
 import {CollectionPreview} from "../../components/collection-preview/collection-preview.component";
 
-export class ShopPage extends React.Component {
+export class ShopComponent extends React.Component {
     constructor(props) {
         super(props);
 
